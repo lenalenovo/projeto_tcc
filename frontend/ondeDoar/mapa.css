@@ -18,8 +18,6 @@ body {
 
 
 header {
-
-  position: fixed;
   top: 0;
   width: 100%;
   z-index: 50;
@@ -29,6 +27,8 @@ header {
 main{
   margin: 48px 78px;
   min-height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-container {
@@ -343,4 +343,11 @@ input[type=password] {
 .linkModal {
   color: var(--rosa);
   cursor: pointer;
+}
+
+#mapid{
+height: 80px; 
+width: 100%;
+display: flex;
+padding-top: 50%;
 }
