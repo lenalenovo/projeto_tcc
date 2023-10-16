@@ -33,6 +33,13 @@ async function cadastrar() {
   }
 
   //validar senhas iguais
+  if(senha != confirmSenha){
+    alert("os dados da senha não são iguais!")
+    return
+  }
+  else{
+    alert("as senhas correspondem!")
+  }
 
   document.getElementById("endereco").value = null;
 

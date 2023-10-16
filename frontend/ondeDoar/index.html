@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="../assets/logo.png">
     <script src="../Js/modal.js" defer></script>
-    <script src="../Js/confirm.js" defer></script>
 </head>
 
 <body>
@@ -86,7 +85,9 @@
                 </div>
                 <div class="ativeLocalizacaoDiv">
                     <p class="ativeLocalizacao">Ative a sua localização</p>
-                    <img src="../assets/localizacao.png" class="imagemLocalizacao" onclick="ativarLocalizacao()" />
+                    <img src="../assets/localizacao.png" class="imagemLocalizacao" onclick="mudarPagina()" />
+                    
+
                 </div>
             </div>
         </section>
@@ -103,10 +104,10 @@
             </div>
             <div class="bodyModal">
                 <p class="textoModal">e-mail:</p>
-                <input type="text" placeholder="email@email" class="inputModal" required>
+                <input type="text" placeholder="email@email" class="inputModal" required name="email" id="email">
                 <p class="textoModal">senha:</p>
-                <input type="password" placeholder="******" class="inputModal" required>
-                <button type="button" class="botaoModal">entrar</button>
+                <input type="password" placeholder="******" class="inputModal" id="password" required name="password">
+                <button type="button" class="botaoModal" disabled="true">entrar</button>
             </div>
             <div class="footerModal">
                 <p class="textoFooterModal">não possui cadastro? cadastre-se <a href="../Cadastro/index.html"
@@ -114,6 +115,13 @@
             </div>
         </div>
     </section>
+    <script>
+
+        function mudarPagina(){
+            window.location = "mapa.html"
+        }
+    </script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=****************&callback=initMap"></script> -->
 </body>
 
 </html>

@@ -99,7 +99,7 @@ async function storeUser(request, response) {
 // Função que atualiza o usuário no banco
 async function updateUser(request, response) {
     // Preparar o comando de execução no banco
-    const query = "UPDATE usuario SET `nome` = ?, `senha` = ?, `endereco` = ? WHERE `id_usuario` = ?";
+    const query = "UPDATE usuarios SET `nome` = ?, `senha` = ?, `endereco` = ? WHERE `id` = ?";
 
     // Recuperar os dados enviados na requisição respectivamente
     const params = Array(
@@ -143,7 +143,7 @@ async function updateUser(request, response) {
 // Função que remove usuário no banco
 async function deleteUser(request, response) {
     // Preparar o comando de execução no banco
-    const query = "DELETE FROM users WHERE `id_usuario` = ?";
+    const query = "DELETE FROM usuarios WHERE `id` = ?";
 
     // Recebimento de parametro da rota
     const params = Array(
